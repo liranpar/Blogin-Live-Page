@@ -1,0 +1,6 @@
+.card-layout {
+  max-width: 680px;
+  margin: auto;
+
+  transition: 0.5s;
+}

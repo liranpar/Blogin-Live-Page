@@ -1,0 +1,405 @@
+header {
+  background-color: rgb(51, 51, 51);
+  color: rgb(221, 221, 221);
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.main-header {
+  height: 70px;
+}
+
+.logo {
+  display: inline-block;
+  font-family: logo;
+  font-size: 1.8rem;
+  line-height: 70px;
+  width: 200px;
+  height: 70px;
+  margin-left: 10px;
+}
+
+.logo span {
+  color: rgb(18, 179, 18);
+}
+
+header ul {
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: inset 1px 0px 4px 0px rgb(12, 226, 59);
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.hide-nav {
+  transform: translateX(100%);
+}
+
+header ul li {
+  height: 79px;
+  width: 120px;
+  line-height: 79px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+header ul li:hover {
+  color: rgb(18, 179, 18);
+}
+
+.btn-menu {
+  margin-right: 15px;
+}
+
+.card-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: auto;
+  width: 95%;
+  margin-top: 30px;
+}
+
+.card-image {
+  width: 100%;
+  height: 170px;
+}
+
+.card-text-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.card-title {
+  margin: 0 0 0 0;
+  color: var(--clr1);
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  line-height: 1.25rem;
+  margin: 0 0 0;
+}
+
+.read-btn {
+  display: block;
+  width: 140px;
+  height: 28px;
+  border-radius: 50px;
+  border: 2px solid rgba(141, 141, 141, 0.5);
+  color: rgba(110, 110, 110, 0.8);
+  text-align: center;
+  line-height: 28px;
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  transition: 0.1s;
+}
+
+.read-btn span {
+  display: none;
+}
+
+.read-btn:hover {
+  border: 2px solid rgba(20, 192, 29, 0.5);
+  color: rgba(20, 192, 29, 0.8);
+  cursor: pointer;
+  width: 180px;
+}
+
+.read-btn:hover span {
+  display: inline;
+}
+
+.footer-title {
+  margin-top: 0px;
+  font-family: logo;
+  font-size: 2.2rem;
+  color: black;
+}
+
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+
+@media (min-width: 300px) {
+  .card-image {
+    height: 250px;
+  }
+
+  .read-btn {
+    width: 160px;
+    height: 35px;
+
+    line-height: 35px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+
+@media (min-width: 470px) {
+  .card-image {
+    height: 350px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+
+@media (min-width: 605px) {
+  .card-layout {
+    max-width: 580px;
+  }
+
+  header ul {
+    position: static;
+    flex-direction: row;
+    background-color: inherit;
+    box-shadow: none;
+    height: inherit;
+    transform: none;
+  }
+
+  .hide-nav {
+    transform: none;
+  }
+
+  header ul li {
+    margin-top: 0px;
+    height: 79px;
+    width: 120px;
+    text-align: center;
+    line-height: 79px;
+    border-left: 0.5px solid black;
+    border-bottom: 0.1px solid black;
+    transition: 0.3s;
+  }
+
+  header ul li:hover {
+    border-bottom: 0.1px solid rgb(18, 179, 18);
+    color: rgb(18, 179, 18);
+  }
+
+  header ul li:last-child {
+    border-right: 0.5px solid black;
+  }
+
+  a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .card-container > * {
+    box-sizing: border-box;
+  }
+
+  .main-header {
+    height: 80px;
+  }
+
+  .logo {
+    font-size: 2.1rem;
+    line-height: 80px;
+    width: 790px;
+    height: 80px;
+    border-bottom: 0.1px solid black;
+    margin-left: 0px;
+  }
+
+  .logo span {
+    color: rgb(18, 179, 18);
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .card-text-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .footer-title {
+    margin-top: 15px;
+  }
+}
+
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+
+@media (min-width: 695px) {
+  .card-layout {
+    max-width: 680px;
+  }
+
+  header ul li {
+    margin-top: 0px;
+    height: 99px;
+    width: 120px;
+    text-align: center;
+    line-height: 99px;
+    border-left: 0.5px solid black;
+    border-bottom: 0.1px solid black;
+    transition: 0.3s;
+  }
+
+  .main-header {
+    height: 100px;
+  }
+
+  .logo {
+    font-size: 2.6rem;
+    line-height: 100px;
+    height: 100px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 230px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .card-image {
+    width: 50%;
+    height: 230px;
+    flex-grow: 1;
+    padding-inline-end: 10px;
+  }
+
+  .card-text-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 230px;
+    flex-grow: 1;
+    padding-inline-start: 10px;
+    margin-top: 0px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.7rem;
+  }
+
+  .footer-title {
+    margin-top: 25px;
+  }
+}
+
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+/* BREAK POINT */
+
+@media (min-width: 950px) {
+  .card-layout {
+    max-width: 860px;
+  }
+
+  .card-container {
+    height: 270px;
+    margin-top: 60px;
+  }
+
+  .card-image {
+    height: 270px;
+    padding-inline-end: 20px;
+  }
+
+  .card-text-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+    padding-inline-start: 20px;
+  }
+
+  .card-title {
+    margin: 0 0 0 0;
+    color: var(--clr1);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    margin: 0 0 0;
+  }
+
+  .read-btn {
+    display: block;
+    width: 160px;
+    height: 35px;
+    border-radius: 50px;
+    border: 2px solid rgba(141, 141, 141, 0.5);
+    color: rgba(110, 110, 110, 0.8);
+    text-align: center;
+    line-height: 35px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: 0.1s;
+  }
+
+  .read-btn span {
+    display: none;
+  }
+
+  .read-btn:hover {
+    border: 2px solid rgba(20, 192, 29, 0.5);
+    color: rgba(20, 192, 29, 0.8);
+    cursor: pointer;
+    width: 180px;
+  }
+
+  .read-btn:hover span {
+    display: inline;
+  }
+}

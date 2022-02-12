@@ -1,0 +1,9 @@
+@font-face {
+  font-family: logo;
+  src: url(/fonts/eurofurence/eurof55.ttf);
+}
+
+@font-face {
+  font-family: reg-txt;
+  src: url(/fonts/Roboto/Roboto-Medium.ttf);
+}

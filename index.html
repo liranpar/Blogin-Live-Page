@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-header card-layout">
+        <nav class="main-nav flex space-between align-center">
+          <div class="logo">Blogin<span>.</span></div>
+          <ul class="clean-list flex hide-nav">
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="btn-menu" onclick="openMenu()">☰</button>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content card-layout">
+      <div class="card-container">
+        <img src="img/1.jpg" class="card-image" alt="" />
+
+        <div class="card-text-cont">
+          <h2 class="card-title">
+            Most beutifull and unique lakes in the world.
+          </h2>
+          <p class="card-text">
+            Join us for manificent tour and enjoy the most amazing lakes in the
+            world, amet consectetur adipisicing elit. Ducimus asperiores sint
+            iure voluptatem? Repudiandae.
+            <br /><br />
+            quasi optio suscipit maiores accusamus maxime obcaecati quas laborum
+            aspernatur iure deleniti
+          </p>
+
+          <div class="read-btn">Continue Reading <span>--></span></div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <img src="img/2.jpg" class="card-image" alt="" />
+        <div class="card-text-cont flex space-between">
+          <h2 class="card-title">the world's most amazing forrests.</h2>
+          <p class="card-text">
+            The most unique forrests on the globe, amet consectetur adipisicing
+            elit. Ducimus asperiores sint iure voluptatem? Repudiandae, illo in
+            necessitatibus asperiores, quae, consequuntur quasi.
+            <br /><br />
+            quasi optio suscipit maiores accusamus maxime obcaecati quas laborum
+            aspernatur iure deleniti!
+          </p>
+
+          <div class="read-btn">Continue Reading <span>--></span></div>
+        </div>
+      </div>
+      <div class="card card-container">
+        <img src="img/3.jpg" class="card-image" alt="" />
+        <div class="card-text-cont">
+          <h2 class="card-title">The most megical villages by far.</h2>
+          <p class="card-text">
+            Experience the megical villages that tou will never forget, amet
+            consectetur adipisicing elit. Ducimus asperiores sint iure
+            voluptatem? Repudiandae, illo. <br /><br />
+            quasi optio suscipit maxime obcaecati quas laborum aspernatur iure
+            deleniti! Odio ex dolorem.
+          </p>
+
+          <div class="read-btn">Continue Reading <span>--></span></div>
+        </div>
+      </div>
+    </main>
+    <div class="card-layout pages flex space-between">
+      <div class="page"><- previous</div>
+      <div class="page">next -></div>
+    </div>
+    <footer class="main-footer">
+      <h1 class="footer-title">Blogin<span>.</span></h1>
+      <small>
+        &#169; 2014 Blogin.com - All Rights Reserved - Find more free Templates
+        at <a>Pixelhint.com</a>
+      </small>
+      <div class="social-container">
+        <ul class="clean-list flex space-between align-center">
+          <li>
+            <a><img class="social-icon" src="img/facebook.png" alt="fb" /></a>
+          </li>
+          <li>
+            <a><img class="social-icon" src="img/be.png" alt="be" /></a>
+          </li>
+          <li>
+            <a
+              ><img class="social-icon" src="img/twitter.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a
+              ><img class="social-icon" src="img/linkedin.png" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div onclick="closeMenu()" class="overlay hidden"></div>
+    <script src="script/main.js"></script>
+  </body>
+</html>
